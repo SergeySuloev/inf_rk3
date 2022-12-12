@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DB writing test page</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <a href="/">Таблица</a>
+        </tr>
+        <tr>
+            <a href="/edit">Изменить популяцию</a>
+        </tr>
+        <tr>
+            <a href="/delete">Удалить по ID</a>
+        </tr>
+    </table><br>
+    <h1>Удалить</h1>
+    <form method="post">
+        <label for="identifier">ID:</label><br>
+        <input type="number" id="identifier" name="identifier" value="1"><br>
+        <input type="submit" value="Отправить">
+    </form>
+</body>
+</html>

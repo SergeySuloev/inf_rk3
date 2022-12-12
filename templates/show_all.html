@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>DB Test page</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <a href="/">Таблица</a>
+        </tr>
+        <tr>
+            <a href="/edit">Изменить популяцию</a>
+        </tr>
+        <tr>
+            <a href="/delete">Удалить по ID</a>
+        </tr>
+    </table><br>
+    <h1>Содержимое базы данных</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Страна</th>
+            <th>Столица</th>
+            <th>Популяция</th>
+            <th>Язык</th>
+        </thead>
+
+        <tbody>
+        {% for country in Countries %}
+        <tr>
+            <td>{{ country.country }}</td>
+            <td>{{ country.capital }}</td>
+            <td>{{ country.population }}</td>
+            <td>{{ country.language }}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table><br>
+</body>
+</html>
+<body>
+
+</body>
+</html>
